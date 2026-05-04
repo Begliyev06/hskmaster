@@ -3,25 +3,23 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 25px;
     margin-bottom: 57px;
-    border: solid;
-    border-width: 2px;
-    border-color: #7672cb;
-    padding-bottom: 18px;
-    padding: 30px;
-    padding-top: 0;
-    border-radius: 40px;
-    box-shadow: 2px 2px 2px 7px rgba(0,0,0,0.15);
-    transition: transform 1s;
-    backdrop-filter: blur();
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: var(--premium-shadow);
+    transition: transform var(--transition-speed);
 }
 
 .character-container:hover{
-    transform: scale(1.05);
+    transform: translateY(-4px);
 }
 
-@media (max-width:750px) {
+@media (max-width: 768px) {
             .character-container{
                 grid-template-columns: 1fr;
+                gap: 20px;
+                padding-top: 20px;
             }
         }
 
@@ -40,60 +38,94 @@ h1{
     color: #7672cb;
 }
 
+@media (max-width: 768px) {
+    .hanzi {
+        font-size: 60px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
 .word-type{
     display: inline-block;
     margin-bottom: 15px;
     margin-top: 5px;
-    border: solid;
-    border-width: 1px;
-    padding: 8px;
-    border-color: #7672cb;
-    background-color: #7672cb;
-    border-radius: 16px;
-    color: white;
-    font-size: 14px;
+    padding: 4px 12px;
+    background-color: var(--primary-light);
+    border-radius: 20px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
 }
 .pinyin{
-    color: rgb(88, 87, 87);
-    font-size: 40px;
+    color: var(--text-muted);
+    font-size: 28px;
     margin-bottom: 10px;
     font-weight: 700;
+}
+@media (max-width: 768px) {
+    .pinyin {
+        font-size: 24px;
+    }
 }
 
 .translation{
-    font-size: 40px;
+    font-size: 32px;
 font-weight: 700;
+margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .translation {
+        font-size: 24px;
+    }
 }
 
+
 .example-sentences{
-    color: rgb(88, 87, 87);
-    font-size: 23px;
-    margin-bottom: 10px;
-    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .example-sentences {
+        font-size: 18px;
+    }
 }
 
 
 .hanzi-card {
   text-align: center;
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  width: 250px;
+  background: #fdfdfd;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  max-width: 250px;
   margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .hanzi-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 button {
   margin: 8px;
-  padding: 20px 18px;
-  border: solid;
-  border-width: 1px;
-  border-color: grey;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
-  background: #4CAF50;
+  background: var(--primary-color);
   color: white;
-  transition: opacity 0.8s;
+  font-weight: 600;
+  transition: opacity var(--transition-speed);
+  min-height: 44px;
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.4);
 }
 
 button:hover{

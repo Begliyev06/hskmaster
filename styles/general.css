@@ -1,15 +1,32 @@
+:root {
+    --primary-color: #6366f1; /* Slightly more vibrant indigo */
+    --primary-light: #e0e7ff;
+    --bg-color: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --transition-speed: 0.3s;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --premium-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
+
 body{
-    background-color: #F9FAFB;
+    background-color: var(--bg-color);
     margin: 0;
     padding-top: 120px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 24px;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+}
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
 }
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 0;
         }

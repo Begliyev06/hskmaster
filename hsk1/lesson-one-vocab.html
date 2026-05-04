@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/lessons-table.css">
     <link rel="stylesheet" href="/styles/vocab-page.css">
     <title>HSK1 Lesson 1 Vocabulary</title>
 </head>
@@ -30,8 +29,8 @@
     <div class="hanzi-card">
   <div id="character-target1"></div>
 
-  <button onclick="playAnimation()">▶ Animate</button>
-  <button onclick="startQuiz()">✍ Practice</button>
+  <button onclick="playAnimation1()">▶ Animate</button>
+  <button onclick="startQuiz1()">✍ Practice</button>
   </div>
 
   <div class="hanzi-card">
@@ -283,402 +282,30 @@
 
    <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
    <script>
-  const writer = HanziWriter.create('character-target1', '你',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
+      function createWriter(id, character) {
+        return HanziWriter.create(id, character, {
+          width: 200,
+          height: 200,
+          padding: 10,
+          showOutline: true,
+          strokeAnimationSpeed: 1,
+          delayBetweenStrokes: 100
+        });
+      }
 
-  function playAnimation() {
-    writer.animateCharacter();
-  }
+      const charMap = {
+        1:'你', 2:'好', 4:'大', 5:'家', 6:'好', 7:'学', 8:'生', 9:'老', 10:'师',
+        11:'您', 12:'你', 13:'们', 14:'谢', 15:'谢', 16:'客', 17:'气', 18:'同', 19:'学',
+        20:'再', 21:'见'
+      };
 
-  function startQuiz() {
-    writer.quiz();
-  }
-</script> 
-<script>
-  const writer2 = HanziWriter.create('character-target2', '好',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation2() {
-    writer2.animateCharacter();
-  }
-
-  function startQuiz2() {
-    writer2.quiz();
-  }
-</script>
-
-<script>
-  const writer3 = HanziWriter.create('character-target4', '大',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation4() {
-    writer3.animateCharacter();
-  }
-
-  function startQuiz4() {
-    writer3.quiz();
-  }
-</script>
-
-<script>
-  const writer4 = HanziWriter.create('character-target5', '家',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation5() {
-    writer4.animateCharacter();
-  }
-
-  function startQuiz5() {
-    writer4.quiz();
-  }
-</script>
-
-<script>
-  const writer6 = HanziWriter.create('character-target6', '好',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation6() {
-    writer6.animateCharacter();
-  }
-
-  function startQuiz6() {
-    writer6.quiz();
-  }
-</script>
-
-<script>
-  const writer7 = HanziWriter.create('character-target7', '学',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation7() {
-    writer7.animateCharacter();
-  }
-
-  function startQuiz7() {
-    writer7.quiz();
-  }
-</script>
-
-<script>
-  const writer8 = HanziWriter.create('character-target8', '生',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation8() {
-    writer8.animateCharacter();
-  }
-
-  function startQuiz8() {
-    writer8.quiz();
-  }
-</script>
-
-<script>
-  const writer9 = HanziWriter.create('character-target9', '老',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation9() {
-    writer9.animateCharacter();
-  }
-
-  function startQuiz9() {
-    writer9.quiz();
-  }
-</script>
-
-<script>
-  const writer10 = HanziWriter.create('character-target10', '师',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation10() {
-    writer10.animateCharacter();
-  }
-
-  function startQuiz10() {
-    writer10.quiz();
-  }
-</script>
-
-<script>
-  const writer11 = HanziWriter.create('character-target11', '您',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation11() {
-    writer11.animateCharacter();
-  }
-
-  function startQuiz11() {
-    writer11.quiz();
-  }
-</script>
-
-<script>
-  const writer12 = HanziWriter.create('character-target12', '你',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation12() {
-    writer12.animateCharacter();
-  }
-
-  function startQuiz12() {
-    writer12.quiz();
-  }
-</script>
-
-<script>
-  const writer13 = HanziWriter.create('character-target13', '们',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation13() {
-    writer13.animateCharacter();
-  }
-
-  function startQuiz13() {
-    writer13.quiz();
-  }
-</script>
-
-<script>
-  const writer14 = HanziWriter.create('character-target14', '谢',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation14() {
-    writer14.animateCharacter();
-  }
-
-  function startQuiz14() {
-    writer14.quiz();
-  }
-</script>
-
-<script>
-  const writer15 = HanziWriter.create('character-target15', '谢',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation15() {
-    writer15.animateCharacter();
-  }
-
-  function startQuiz15() {
-    writer15.quiz();
-  }
-</script>
-
-<script>
-  const writer16 = HanziWriter.create('character-target16', '客',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation16() {
-    writer16.animateCharacter();
-  }
-
-  function startQuiz16() {
-    writer16.quiz();
-  }
-</script>
-
-<script>
-  const writer17 = HanziWriter.create('character-target17', '气',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation17() {
-    writer17.animateCharacter();
-  }
-
-  function startQuiz17() {
-    writer17.quiz();
-  }
-</script>
-
-<script>
-  const writer17 = HanziWriter.create('character-target17', '气',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation17() {
-    writer17.animateCharacter();
-  }
-
-  function startQuiz17() {
-    writer17.quiz();
-  }
-</script>
-
-<script>
-  const writer18 = HanziWriter.create('character-target18', '同',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation18() {
-    writer18.animateCharacter();
-  }
-
-  function startQuiz18() {
-    writer18.quiz();
-  }
-</script>
-
-<script>
-  const writer19 = HanziWriter.create('character-target19', '学',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation19() {
-    writer19.animateCharacter();
-  }
-
-  function startQuiz19() {
-    writer19.quiz();
-  }
-</script>
-
-<script>
-  const writer20 = HanziWriter.create('character-target20', '再',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation20() {
-    writer20.animateCharacter();
-  }
-
-  function startQuiz20() {
-    writer20.quiz();
-  }
-</script>
-
-<script>
-  const writer21 = HanziWriter.create('character-target21', '见',  {
-    width: 200,
-    height: 200,
-    padding: 10,
-    showOutline: true,
-    strokeAnimationSpeed: 1,
-    delayBetweenStrokes: 100
-  });
-
-  function playAnimation21() {
-    writer21.animateCharacter();
-  }
-
-  function startQuiz21() {
-    writer21.quiz();
-  }
-</script>
+      const writers = {};
+      Object.keys(charMap).forEach(id => {
+        writers[id] = createWriter(`character-target${id}`, charMap[id]);
+        window[`playAnimation${id}`] = () => writers[id].animateCharacter();
+        window[`startQuiz${id}`] = () => writers[id].quiz();
+      });
+    </script>
 
 </body>
 </html>
