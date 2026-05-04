@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSK1 Lesson 7 Vocabulary</title>
+    <meta name="description" content="HSK MASTER - HSK1-6 courses. Learn Chinese effectively. Free platform to master Chinese and pass HSK exams! We focus on character etymology, essential grammar patterns and real-world conversations to ensure you don't just pass the exam, but truly master the language. Benefit from curated vocabulary lists, interactive practive tests, and expert guidance tailored to the latest HSK standarts">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/vocab-page.css">
+</head>
+<body>
+    <header class="header">
+        <div class="right-section">
+            <p>HSK MASTER</p>
+        </div>
+</header>
+
+<h1>HSK1 Lesson 7 Vocabulary</h1>
+
+<!-- 现在 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">现在</h2>
+    <p class="pinyin">xiànzài</p>
+    <p class="translation">häzirki wagtda / indi</p>
+    <p class="word-type">noun (time)</p>
+    <p class="example-sentences">我现在很忙。</p>
+    <p class="example-sentences">Men häzirki wagtda örän meşgul.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target1"></div>
+    <button onclick="playAnimation1()">▶ Animate</button>
+    <button onclick="startQuiz1()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target2"></div>
+    <button onclick="playAnimation2()">▶ Animate</button>
+    <button onclick="startQuiz2()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 点 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">点</h2>
+    <p class="pinyin">diǎn</p>
+    <p class="translation">sagat</p>
+    <p class="word-type">measure word (time)</p>
+    <p class="example-sentences">三点了。</p>
+    <p class="example-sentences">Sagat üç boldy.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target3"></div>
+    <button onclick="playAnimation3()">▶ Animate</button>
+    <button onclick="startQuiz3()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 早上 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">早上</h2>
+    <p class="pinyin">zǎoshang</p>
+    <p class="translation">irden</p>
+    <p class="word-type">noun (time)</p>
+    <p class="example-sentences">我早上学习。</p>
+    <p class="example-sentences">Men irden okaýaryn.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target4"></div>
+    <button onclick="playAnimation4()">▶ Animate</button>
+    <button onclick="startQuiz4()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target5"></div>
+    <button onclick="playAnimation5()">▶ Animate</button>
+    <button onclick="startQuiz5()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 上午 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">上午</h2>
+    <p class="pinyin">shàngwǔ</p>
+    <p class="translation">günortadan öň</p>
+    <p class="word-type">noun (time)</p>
+    <p class="example-sentences">我上午有课。</p>
+    <p class="example-sentences">Men günortadan öň sapagym bar.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target6"></div>
+    <button onclick="playAnimation6()">▶ Animate</button>
+    <button onclick="startQuiz6()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target7"></div>
+    <button onclick="playAnimation7()">▶ Animate</button>
+    <button onclick="startQuiz7()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 分 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">分</h2>
+    <p class="pinyin">fēn</p>
+    <p class="translation">minut</p>
+    <p class="word-type">measure word (time)</p>
+    <p class="example-sentences">三点十分。</p>
+    <p class="example-sentences">Sagat üç on minut.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target8"></div>
+    <button onclick="playAnimation8()">▶ Animate</button>
+    <button onclick="startQuiz8()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 课 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">课</h2>
+    <p class="pinyin">kè</p>
+    <p class="translation">sapak</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">我有汉语课。</p>
+    <p class="example-sentences">Meniň hytaý dili sapagym bar.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target9"></div>
+    <button onclick="playAnimation9()">▶ Animate</button>
+    <button onclick="startQuiz9()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 下午 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">下午</h2>
+    <p class="pinyin">xiàwǔ</p>
+    <p class="translation">günortadan soň</p>
+    <p class="word-type">noun (time)</p>
+    <p class="example-sentences">我下午学习。</p>
+    <p class="example-sentences">Men günortadan soň okaýaryn.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target10"></div>
+    <button onclick="playAnimation10()">▶ Animate</button>
+    <button onclick="startQuiz10()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target11"></div>
+    <button onclick="playAnimation11()">▶ Animate</button>
+    <button onclick="startQuiz11()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 见 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">见</h2>
+    <p class="pinyin">jiàn</p>
+    <p class="translation">görmek / duşuşmak</p>
+    <p class="word-type">verb</p>
+    <p class="example-sentences">明天见。</p>
+    <p class="example-sentences">Ertir görüşeris.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target12"></div>
+    <button onclick="playAnimation12()">▶ Animate</button>
+    <button onclick="startQuiz12()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 吧 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">吧</h2>
+    <p class="pinyin">ba</p>
+    <p class="translation">geliň / bolarmy?</p>
+    <p class="word-type">particle</p>
+    <p class="example-sentences">我们走吧。</p>
+    <p class="example-sentences">Geliň gideliň.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target13"></div>
+    <button onclick="playAnimation13()">▶ Animate</button>
+    <button onclick="startQuiz13()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 电影院 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">电影院</h2>
+    <p class="pinyin">diànyǐngyuàn</p>
+    <p class="translation">kinoteatr</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">我去电影院看电影。</p>
+    <p class="example-sentences">Men kinoteatra film görmäge gidýärin.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target14"></div>
+    <button onclick="playAnimation14()">▶ Animate</button>
+    <button onclick="startQuiz14()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target15"></div>
+    <button onclick="playAnimation15()">▶ Animate</button>
+    <button onclick="startQuiz15()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target16"></div>
+    <button onclick="playAnimation16()">▶ Animate</button>
+    <button onclick="startQuiz16()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 看 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">看</h2>
+    <p class="pinyin">kàn</p>
+    <p class="translation">görmek / seretmek</p>
+    <p class="word-type">verb</p>
+    <p class="example-sentences">我看电影。</p>
+    <p class="example-sentences">Men film görýärin.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target17"></div>
+    <button onclick="playAnimation17()">▶ Animate</button>
+    <button onclick="startQuiz17()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 电影 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">电影</h2>
+    <p class="pinyin">diànyǐng</p>
+    <p class="translation">film</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">这个电影很好看。</p>
+    <p class="example-sentences">Bu film örän gowy.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target18"></div>
+    <button onclick="playAnimation18()">▶ Animate</button>
+    <button onclick="startQuiz18()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target19"></div>
+    <button onclick="playAnimation19()">▶ Animate</button>
+    <button onclick="startQuiz19()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 事 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">事</h2>
+    <p class="pinyin">shì</p>
+    <p class="translation">iş / zat</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">我有事。</p>
+    <p class="example-sentences">Meniň işim bar.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target20"></div>
+    <button onclick="playAnimation20()">▶ Animate</button>
+    <button onclick="startQuiz20()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 上课 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">上课</h2>
+    <p class="pinyin">shàngkè</p>
+    <p class="translation">sapaga gitmek</p>
+    <p class="word-type">verb</p>
+    <p class="example-sentences">我现在上课。</p>
+    <p class="example-sentences">Men häzirki wagtda sapakda.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target21"></div>
+    <button onclick="playAnimation21()">▶ Animate</button>
+    <button onclick="startQuiz21()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target22"></div>
+    <button onclick="playAnimation22()">▶ Animate</button>
+    <button onclick="startQuiz22()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 呢 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">呢</h2>
+    <p class="pinyin">ne</p>
+    <p class="translation">-çi? / näme bolýar?</p>
+    <p class="word-type">particle</p>
+    <p class="example-sentences">你呢？</p>
+    <p class="example-sentences">Sen-çi?</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target23"></div>
+    <button onclick="playAnimation23()">▶ Animate</button>
+    <button onclick="startQuiz23()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 半 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">半</h2>
+    <p class="pinyin">bàn</p>
+    <p class="translation">ýarym</p>
+    <p class="word-type">number</p>
+    <p class="example-sentences">三点半。</p>
+    <p class="example-sentences">Sagat üç ýarym.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target24"></div>
+    <button onclick="playAnimation24()">▶ Animate</button>
+    <button onclick="startQuiz24()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 下课 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">下课</h2>
+    <p class="pinyin">xiàkè</p>
+    <p class="translation">sapak gutarmak</p>
+    <p class="word-type">verb</p>
+    <p class="example-sentences">我们下课了。</p>
+    <p class="example-sentences">Biziň sapagymyz gutardy.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target25"></div>
+    <button onclick="playAnimation25()">▶ Animate</button>
+    <button onclick="startQuiz25()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target26"></div>
+    <button onclick="playAnimation26()">▶ Animate</button>
+    <button onclick="startQuiz26()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 在 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">在</h2>
+    <p class="pinyin">zài</p>
+    <p class="translation">bolmak / ýerleşmek</p>
+    <p class="word-type">verb / preposition</p>
+    <p class="example-sentences">我在家。</p>
+    <p class="example-sentences">Men öýde.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target27"></div>
+    <button onclick="playAnimation27()">▶ Animate</button>
+    <button onclick="startQuiz27()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 家 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">家</h2>
+    <p class="pinyin">jiā</p>
+    <p class="translation">öý</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">他在家。</p>
+    <p class="example-sentences">Ol öýde.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target28"></div>
+    <button onclick="playAnimation28()">▶ Animate</button>
+    <button onclick="startQuiz28()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 里 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">里</h2>
+    <p class="pinyin">lǐ</p>
+    <p class="translation">içinde</p>
+    <p class="word-type">noun (location suffix)</p>
+    <p class="example-sentences">家里有人。</p>
+    <p class="example-sentences">Öýde adam bar.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target29"></div>
+    <button onclick="playAnimation29()">▶ Animate</button>
+    <button onclick="startQuiz29()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 晚上 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">晚上</h2>
+    <p class="pinyin">wǎnshang</p>
+    <p class="translation">agşam</p>
+    <p class="word-type">noun (time)</p>
+    <p class="example-sentences">我晚上学习。</p>
+    <p class="example-sentences">Men agşam okaýaryn.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target30"></div>
+    <button onclick="playAnimation30()">▶ Animate</button>
+    <button onclick="startQuiz30()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target31"></div>
+    <button onclick="playAnimation31()">▶ Animate</button>
+    <button onclick="startQuiz31()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 医院 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">医院</h2>
+    <p class="pinyin">yīyuàn</p>
+    <p class="translation">hassahana</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">他在医院。</p>
+    <p class="example-sentences">Ol hassahanada.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target32"></div>
+    <button onclick="playAnimation32()">▶ Animate</button>
+    <button onclick="startQuiz32()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target33"></div>
+    <button onclick="playAnimation33()">▶ Animate</button>
+    <button onclick="startQuiz33()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 上班 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">上班</h2>
+    <p class="pinyin">shàngbān</p>
+    <p class="translation">işe gitmek</p>
+    <p class="word-type">verb</p>
+    <p class="example-sentences">我八点上班。</p>
+    <p class="example-sentences">Men sagat sekizde işe gidýärin.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target34"></div>
+    <button onclick="playAnimation34()">▶ Animate</button>
+    <button onclick="startQuiz34()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target35"></div>
+    <button onclick="playAnimation35()">▶ Animate</button>
+    <button onclick="startQuiz35()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 店 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">店</h2>
+    <p class="pinyin">diàn</p>
+    <p class="translation">dükan</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">我去店买东西。</p>
+    <p class="example-sentences">Men dükana zat satyn almaga gidýärin.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target36"></div>
+    <button onclick="playAnimation36()">▶ Animate</button>
+    <button onclick="startQuiz36()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 分钟 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">分钟</h2>
+    <p class="pinyin">fēnzhōng</p>
+    <p class="translation">minut</p>
+    <p class="word-type">noun</p>
+    <p class="example-sentences">十分钟。</p>
+    <p class="example-sentences">On minut.</p>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target37"></div>
+    <button onclick="playAnimation37()">▶ Animate</button>
+    <button onclick="startQuiz37()">✍ Practice</button>
+  </div>
+  <div class="hanzi-card">
+    <div id="character-target38"></div>
+    <button onclick="playAnimation38()">▶ Animate</button>
+    <button onclick="startQuiz38()">✍ Practice</button>
+  </div>
+</div>
+
+<!-- 后 -->
+<div class="character-container">
+  <div class="word-container">
+    <h2 class="hanzi">后</h2>
+    <p class="pinyin">hòu</p>
+    <p class="translation">soň / soňra</p>
+    <p class="word-type">noun / suffix</p>
+    <p class="example-sentences">十分钟后见。</p>
+    <p class="example-sentences">On minutdan soň görüşeris.</p>
+  </div>
+  <div></div>
+  <div class="hanzi-card">
+    <div id="character-target39"></div>
+    <button onclick="playAnimation39()">▶ Animate</button>
+    <button onclick="startQuiz39()">✍ Practice</button>
+  </div>
+</div>
+
+<footer class="footer">
+    <p>All rights are reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+<script>
+  function createWriter(id, character) {
+    const writer = HanziWriter.create(id, character, {
+      width: 200,
+      height: 200,
+      padding: 10,
+      showOutline: true,
+      strokeAnimationSpeed: 1,
+      delayBetweenStrokes: 100
+    });
+    return writer;
+  }
+
+  const writers = {
+    w1: createWriter('character-target1', '现'),
+    w2: createWriter('character-target2', '在'),
+    w3: createWriter('character-target3', '点'),
+    w4: createWriter('character-target4', '早'),
+    w5: createWriter('character-target5', '上'),
+    w6: createWriter('character-target6', '上'),
+    w7: createWriter('character-target7', '午'),
+    w8: createWriter('character-target8', '分'),
+    w9: createWriter('character-target9', '课'),
+    w10: createWriter('character-target10', '下'),
+    w11: createWriter('character-target11', '午'),
+    w12: createWriter('character-target12', '见'),
+    w13: createWriter('character-target13', '吧'),
+    w14: createWriter('character-target14', '电'),
+    w15: createWriter('character-target15', '影'),
+    w16: createWriter('character-target16', '院'),
+    w17: createWriter('character-target17', '看'),
+    w18: createWriter('character-target18', '电'),
+    w19: createWriter('character-target19', '影'),
+    w20: createWriter('character-target20', '事'),
+    w21: createWriter('character-target21', '上'),
+    w22: createWriter('character-target22', '课'),
+    w23: createWriter('character-target23', '呢'),
+    w24: createWriter('character-target24', '半'),
+    w25: createWriter('character-target25', '下'),
+    w26: createWriter('character-target26', '课'),
+    w27: createWriter('character-target27', '在'),
+    w28: createWriter('character-target28', '家'),
+    w29: createWriter('character-target29', '里'),
+    w30: createWriter('character-target30', '晚'),
+    w31: createWriter('character-target31', '上'),
+    w32: createWriter('character-target32', '医'),
+    w33: createWriter('character-target33', '院'),
+    w34: createWriter('character-target34', '上'),
+    w35: createWriter('character-target35', '班'),
+    w36: createWriter('character-target36', '店'),
+    w37: createWriter('character-target37', '分'),
+    w38: createWriter('character-target38', '钟'),
+    w39: createWriter('character-target39', '后')
+  };
+
+  for (let i = 1; i <= 39; i++) {
+    window[`playAnimation${i}`] = () => writers[`w${i}`].animateCharacter();
+    window[`startQuiz${i}`] = () => writers[`w${i}`].quiz();
+  }
+</script>
+</body>
+</html>
