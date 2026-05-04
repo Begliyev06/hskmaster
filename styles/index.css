@@ -3,17 +3,7 @@ header{
     padding-bottom: 3px;
     background-color: rgb(0, 0, 165);
 }
-.logo-image{
-    width: 300px;
 
-}
-
-.logo{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-
-}
 .courses{
     text-align: center;
     font-weight: bold;
