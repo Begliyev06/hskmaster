@@ -17,423 +17,485 @@
     </header>
 
     <h1>HSK1 Lesson 13 Vocabulary</h1>
-
+    <div class="vocab-page-grid">
     <!-- 可以 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">可以</h2>
-            <p class="pinyin">kěyǐ</p>
-            <p class="translation">bolýar / mümkin</p>
-            <p class="word-type">Auxiliary Verb</p>
-            <p class="example-sentences">我可以进来吗？</p>
-            <p class="example-sentences">Men girip bilerinmi?</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target1"></div>
-            <button onclick="playAnimation1()">▶ Animate</button>
-            <button onclick="startQuiz1()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target2"></div>
-            <button onclick="playAnimation2()">▶ Animate</button>
-            <button onclick="startQuiz2()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">kěyǐ</p>
+                <button onclick="playAudio('可以')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">bolýar / mümkin</p>
+                <p class="word-type">Auxiliary Verb</p>
+                <p class="example-sentences">我可以进来吗？</p>
+                <p class="example-sentences">Men girip bilerinmi?</p>
+                <div class="hanzi-card">
+                    <div id="character-target1"></div>
+                    <button onclick="playAnimation1()">▶ Animate</button>
+                    <button onclick="startQuiz1()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target2"></div>
+                    <button onclick="playAnimation2()">▶ Animate</button>
+                    <button onclick="startQuiz2()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 再 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">再</h2>
-            <p class="pinyin">zài</p>
-            <p class="translation">ýene / gaýtadan</p>
-            <p class="word-type">Adverb</p>
-            <p class="example-sentences">请再说一遍。</p>
-            <p class="example-sentences">Haýyş, ýene bir gezek aýdyň.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">zài</p>
+                <button onclick="playAudio('再')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">ýene / gaýtadan</p>
+                <p class="word-type">Adverb</p>
+                <p class="example-sentences">请再说一遍。</p>
+                <p class="example-sentences">Haýyş, ýene bir gezek aýdyň.</p>
+                <div class="hanzi-card">
+                    <div id="character-target3"></div>
+                    <button onclick="playAnimation3()">▶ Animate</button>
+                    <button onclick="startQuiz3()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target3"></div>
-            <button onclick="playAnimation3()">▶ Animate</button>
-            <button onclick="startQuiz3()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 问题 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">问题</h2>
-            <p class="pinyin">wèntí</p>
-            <p class="translation">sorag / mesele</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">我有一个问题。</p>
-            <p class="example-sentences">Meniň bir soragym bar.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target4"></div>
-            <button onclick="playAnimation4()">▶ Animate</button>
-            <button onclick="startQuiz4()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target5"></div>
-            <button onclick="playAnimation5()">▶ Animate</button>
-            <button onclick="startQuiz5()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">wèntí</p>
+                <button onclick="playAudio('问题')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">sorag / mesele</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">我有一个问题。</p>
+                <p class="example-sentences">Meniň bir soragym bar.</p>
+                <div class="hanzi-card">
+                    <div id="character-target4"></div>
+                    <button onclick="playAnimation4()">▶ Animate</button>
+                    <button onclick="startQuiz4()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target5"></div>
+                    <button onclick="playAnimation5()">▶ Animate</button>
+                    <button onclick="startQuiz5()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 卖 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">卖</h2>
-            <p class="pinyin">mài</p>
-            <p class="translation">satmak</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">这个店卖水果。</p>
-            <p class="example-sentences">Bu dükan miwe satýar.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">mài</p>
+                <button onclick="playAudio('卖')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">satmak</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">这个店卖水果。</p>
+                <p class="example-sentences">Bu dükan miwe satýar.</p>
+                <div class="hanzi-card">
+                    <div id="character-target6"></div>
+                    <button onclick="playAnimation6()">▶ Animate</button>
+                    <button onclick="startQuiz6()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target6"></div>
-            <button onclick="playAnimation6()">▶ Animate</button>
-            <button onclick="startQuiz6()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 打电话 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">打电话</h2>
-            <p class="pinyin">dǎ diànhuà</p>
-            <p class="translation">jaň etmek</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">我给爸爸打电话。</p>
-            <p class="example-sentences">Men kakama jaň edýärin.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target7"></div>
-            <button onclick="playAnimation7()">▶ Animate</button>
-            <button onclick="startQuiz7()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target8"></div>
-            <button onclick="playAnimation8()">▶ Animate</button>
-            <button onclick="startQuiz8()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target9"></div>
-            <button onclick="playAnimation9()">▶ Animate</button>
-            <button onclick="startQuiz9()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">dǎ diànhuà</p>
+                <button onclick="playAudio('打电话')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">jaň etmek</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">我给爸爸打电话。</p>
+                <p class="example-sentences">Men kakama jaň edýärin.</p>
+                <div class="hanzi-card">
+                    <div id="character-target7"></div>
+                    <button onclick="playAnimation7()">▶ Animate</button>
+                    <button onclick="startQuiz7()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target8"></div>
+                    <button onclick="playAnimation8()">▶ Animate</button>
+                    <button onclick="startQuiz8()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target9"></div>
+                    <button onclick="playAnimation9()">▶ Animate</button>
+                    <button onclick="startQuiz9()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 一下 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">一下</h2>
-            <p class="pinyin">yíxià</p>
-            <p class="translation">bir gezek / biraz</p>
-            <p class="word-type">Number-Measure</p>
-            <p class="example-sentences">请看一下。</p>
-            <p class="example-sentences">Haýyş, serediň.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target10"></div>
-            <button onclick="playAnimation10()">▶ Animate</button>
-            <button onclick="startQuiz10()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target11"></div>
-            <button onclick="playAnimation11()">▶ Animate</button>
-            <button onclick="startQuiz11()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">yíxià</p>
+                <button onclick="playAudio('一下')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">bir gezek / biraz</p>
+                <p class="word-type">Number-Measure</p>
+                <p class="example-sentences">请看一下。</p>
+                <p class="example-sentences">Haýyş, serediň.</p>
+                <div class="hanzi-card">
+                    <div id="character-target10"></div>
+                    <button onclick="playAnimation10()">▶ Animate</button>
+                    <button onclick="startQuiz10()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target11"></div>
+                    <button onclick="playAnimation11()">▶ Animate</button>
+                    <button onclick="startQuiz11()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 服务员 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">服务员</h2>
-            <p class="pinyin">fúwùyuán</p>
-            <p class="translation">ofisiant</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">服务员，我要杯水。</p>
-            <p class="example-sentences">Ofisiant, maňa bir stakan suw gerek.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target12"></div>
-            <button onclick="playAnimation12()">▶ Animate</button>
-            <button onclick="startQuiz12()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target13"></div>
-            <button onclick="playAnimation13()">▶ Animate</button>
-            <button onclick="startQuiz13()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target14"></div>
-            <button onclick="playAnimation14()">▶ Animate</button>
-            <button onclick="startQuiz14()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">fúwùyuán</p>
+                <button onclick="playAudio('服务员')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">ofisiant</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">服务员，我要杯水。</p>
+                <p class="example-sentences">Ofisiant, maňa bir stakan suw gerek.</p>
+                <div class="hanzi-card">
+                    <div id="character-target12"></div>
+                    <button onclick="playAnimation12()">▶ Animate</button>
+                    <button onclick="startQuiz12()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target13"></div>
+                    <button onclick="playAnimation13()">▶ Animate</button>
+                    <button onclick="startQuiz13()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target14"></div>
+                    <button onclick="playAnimation14()">▶ Animate</button>
+                    <button onclick="startQuiz14()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 女士 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">女士</h2>
-            <p class="pinyin">nǚshì</p>
-            <p class="translation">hanym</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">这位女士是谁？</p>
-            <p class="example-sentences">Bu hanym kim?</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target15"></div>
-            <button onclick="playAnimation15()">▶ Animate</button>
-            <button onclick="startQuiz15()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target16"></div>
-            <button onclick="playAnimation16()">▶ Animate</button>
-            <button onclick="startQuiz16()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">nǚshì</p>
+                <button onclick="playAudio('女士')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">hanym</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">这位女士是谁？</p>
+                <p class="example-sentences">Bu hanym kim?</p>
+                <div class="hanzi-card">
+                    <div id="character-target15"></div>
+                    <button onclick="playAnimation15()">▶ Animate</button>
+                    <button onclick="startQuiz15()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target16"></div>
+                    <button onclick="playAnimation16()">▶ Animate</button>
+                    <button onclick="startQuiz16()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 请 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">请</h2>
-            <p class="pinyin">qǐng</p>
-            <p class="translation">haýyş</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">请坐。</p>
-            <p class="example-sentences">Haýyş, oturyň.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">qǐng</p>
+                <button onclick="playAudio('请')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">haýyş</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">请坐。</p>
+                <p class="example-sentences">Haýyş, oturyň.</p>
+                <div class="hanzi-card">
+                    <div id="character-target17"></div>
+                    <button onclick="playAnimation17()">▶ Animate</button>
+                    <button onclick="startQuiz17()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target17"></div>
-            <button onclick="playAnimation17()">▶ Animate</button>
-            <button onclick="startQuiz17()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 做 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">做</h2>
-            <p class="pinyin">zuò</p>
-            <p class="translation">etmek / ýasamak</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">你在做什么？</p>
-            <p class="example-sentences">Sen näme edýärsiň?</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">zuò</p>
+                <button onclick="playAudio('做')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">etmek / ýasamak</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">你在做什么？</p>
+                <p class="example-sentences">Sen näme edýärsiň?</p>
+                <div class="hanzi-card">
+                    <div id="character-target18"></div>
+                    <button onclick="playAnimation18()">▶ Animate</button>
+                    <button onclick="startQuiz18()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target18"></div>
-            <button onclick="playAnimation18()">▶ Animate</button>
-            <button onclick="startQuiz18()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 给 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">给</h2>
-            <p class="pinyin">gěi</p>
-            <p class="translation">bermek</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">请给我一杯茶。</p>
-            <p class="example-sentences">Maňa bir käse çaý beriň.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">gěi</p>
+                <button onclick="playAudio('给')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">bermek</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">请给我一杯茶。</p>
+                <p class="example-sentences">Maňa bir käse çaý beriň.</p>
+                <div class="hanzi-card">
+                    <div id="character-target19"></div>
+                    <button onclick="playAnimation19()">▶ Animate</button>
+                    <button onclick="startQuiz19()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target19"></div>
-            <button onclick="playAnimation19()">▶ Animate</button>
-            <button onclick="startQuiz19()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 杯 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">杯</h2>
-            <p class="pinyin">bēi</p>
-            <p class="translation">stakan / käse</p>
-            <p class="word-type">Measure Word</p>
-            <p class="example-sentences">一杯咖啡。</p>
-            <p class="example-sentences">Bir käse kofe.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">bēi</p>
+                <button onclick="playAudio('杯')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">stakan / käse</p>
+                <p class="word-type">Measure Word</p>
+                <p class="example-sentences">一杯咖啡。</p>
+                <p class="example-sentences">Bir käse kofe.</p>
+                <div class="hanzi-card">
+                    <div id="character-target20"></div>
+                    <button onclick="playAnimation20()">▶ Animate</button>
+                    <button onclick="startQuiz20()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target20"></div>
-            <button onclick="playAnimation20()">▶ Animate</button>
-            <button onclick="startQuiz20()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 要 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">要</h2>
-            <p class="pinyin">yào</p>
-            <p class="translation">islemek / gerek</p>
-            <p class="word-type">Verb</p>
-            <p class="example-sentences">我要吃米饭。</p>
-            <p class="example-sentences">Men tüwi iýmek isleýärin.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">yào</p>
+                <button onclick="playAudio('要')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">islemek / gerek</p>
+                <p class="word-type">Verb</p>
+                <p class="example-sentences">我要吃米饭。</p>
+                <p class="example-sentences">Men tüwi iýmek isleýärin.</p>
+                <div class="hanzi-card">
+                    <div id="character-target21"></div>
+                    <button onclick="playAnimation21()">▶ Animate</button>
+                    <button onclick="startQuiz21()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target21"></div>
-            <button onclick="playAnimation21()">▶ Animate</button>
-            <button onclick="startQuiz21()">✍ Practice</button>
-        </div>
     </div>
-
     <!-- 早饭 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">早饭</h2>
-            <p class="pinyin">zǎofàn</p>
-            <p class="translation">ertirlik nahary</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">我吃早饭。</p>
-            <p class="example-sentences">Men ertirlik naharyny iýýärin.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target22"></div>
-            <button onclick="playAnimation22()">▶ Animate</button>
-            <button onclick="startQuiz22()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target23"></div>
-            <button onclick="playAnimation23()">▶ Animate</button>
-            <button onclick="startQuiz23()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">zǎofàn</p>
+                <button onclick="playAudio('早饭')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">ertirlik nahary</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">我吃早饭。</p>
+                <p class="example-sentences">Men ertirlik naharyny iýýärin.</p>
+                <div class="hanzi-card">
+                    <div id="character-target22"></div>
+                    <button onclick="playAnimation22()">▶ Animate</button>
+                    <button onclick="startQuiz22()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target23"></div>
+                    <button onclick="playAnimation23()">▶ Animate</button>
+                    <button onclick="startQuiz23()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 这个 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">这个</h2>
-            <p class="pinyin">zhège</p>
-            <p class="translation">bu / şu zat</p>
-            <p class="word-type">Pronoun</p>
-            <p class="example-sentences">这个多少钱？</p>
-            <p class="example-sentences">Bu näçe pul?</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target24"></div>
-            <button onclick="playAnimation24()">▶ Animate</button>
-            <button onclick="startQuiz24()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target25"></div>
-            <button onclick="playAnimation25()">▶ Animate</button>
-            <button onclick="startQuiz25()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">zhège</p>
+                <button onclick="playAudio('这个')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">bu / şu zat</p>
+                <p class="word-type">Pronoun</p>
+                <p class="example-sentences">这个多少钱？</p>
+                <p class="example-sentences">Bu näçe pul?</p>
+                <div class="hanzi-card">
+                    <div id="character-target24"></div>
+                    <button onclick="playAnimation24()">▶ Animate</button>
+                    <button onclick="startQuiz24()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target25"></div>
+                    <button onclick="playAnimation25()">▶ Animate</button>
+                    <button onclick="startQuiz25()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 面包 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">面包</h2>
-            <p class="pinyin">miànbāo</p>
-            <p class="translation">çörek</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">面包很好吃。</p>
-            <p class="example-sentences">Çörek örän gowy.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target26"></div>
-            <button onclick="playAnimation26()">▶ Animate</button>
-            <button onclick="startQuiz26()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target27"></div>
-            <button onclick="playAnimation27()">▶ Animate</button>
-            <button onclick="startQuiz27()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">miànbāo</p>
+                <button onclick="playAudio('面包')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">çörek</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">面包很好吃。</p>
+                <p class="example-sentences">Çörek örän gowy.</p>
+                <div class="hanzi-card">
+                    <div id="character-target26"></div>
+                    <button onclick="playAnimation26()">▶ Animate</button>
+                    <button onclick="startQuiz26()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target27"></div>
+                    <button onclick="playAnimation27()">▶ Animate</button>
+                    <button onclick="startQuiz27()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 鸡蛋 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">鸡蛋</h2>
-            <p class="pinyin">jīdàn</p>
-            <p class="translation">ýumurtga</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">我买鸡蛋。</p>
-            <p class="example-sentences">Men ýumurtga satyn alýaryn.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target28"></div>
-            <button onclick="playAnimation28()">▶ Animate</button>
-            <button onclick="startQuiz28()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target29"></div>
-            <button onclick="playAnimation29()">▶ Animate</button>
-            <button onclick="startQuiz29()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">jīdàn</p>
+                <button onclick="playAudio('鸡蛋')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">ýumurtga</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">我买鸡蛋。</p>
+                <p class="example-sentences">Men ýumurtga satyn alýaryn.</p>
+                <div class="hanzi-card">
+                    <div id="character-target28"></div>
+                    <button onclick="playAnimation28()">▶ Animate</button>
+                    <button onclick="startQuiz28()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target29"></div>
+                    <button onclick="playAnimation29()">▶ Animate</button>
+                    <button onclick="startQuiz29()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 先生 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">先生</h2>
-            <p class="pinyin">xiānsheng</p>
-            <p class="translation">jenap</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">王先生你好。</p>
-            <p class="example-sentences">Jenap Wang, salam.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target30"></div>
-            <button onclick="playAnimation30()">▶ Animate</button>
-            <button onclick="startQuiz30()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target31"></div>
-            <button onclick="playAnimation31()">▶ Animate</button>
-            <button onclick="startQuiz31()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">xiānsheng</p>
+                <button onclick="playAudio('先生')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">jenap</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">王先生你好。</p>
+                <p class="example-sentences">Jenap Wang, salam.</p>
+                <div class="hanzi-card">
+                    <div id="character-target30"></div>
+                    <button onclick="playAnimation30()">▶ Animate</button>
+                    <button onclick="startQuiz30()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target31"></div>
+                    <button onclick="playAnimation31()">▶ Animate</button>
+                    <button onclick="startQuiz31()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 一半 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">一半</h2>
-            <p class="pinyin">yíbàn</p>
-            <p class="translation">ýarym</p>
-            <p class="word-type">Number-Measure</p>
-            <p class="example-sentences">我吃了一半。</p>
-            <p class="example-sentences">Men ýarysyny iýdim.</p>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target32"></div>
-            <button onclick="playAnimation32()">▶ Animate</button>
-            <button onclick="startQuiz32()">✍ Practice</button>
-        </div>
-        <div class="hanzi-card">
-            <div id="character-target33"></div>
-            <button onclick="playAnimation33()">▶ Animate</button>
-            <button onclick="startQuiz33()">✍ Practice</button>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">yíbàn</p>
+                <button onclick="playAudio('一半')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">ýarym</p>
+                <p class="word-type">Number-Measure</p>
+                <p class="example-sentences">我吃了一半。</p>
+                <p class="example-sentences">Men ýarysyny iýdim.</p>
+                <div class="hanzi-card">
+                    <div id="character-target32"></div>
+                    <button onclick="playAnimation32()">▶ Animate</button>
+                    <button onclick="startQuiz32()">✍ Practice</button>
+                </div>
+                <div class="hanzi-card">
+                    <div id="character-target33"></div>
+                    <button onclick="playAnimation33()">▶ Animate</button>
+                    <button onclick="startQuiz33()">✍ Practice</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <!-- 茶 -->
     <div class="character-container">
         <div class="word-container">
             <h2 class="hanzi">茶</h2>
-            <p class="pinyin">chá</p>
-            <p class="translation">çaý</p>
-            <p class="word-type">Noun</p>
-            <p class="example-sentences">我喝茶。</p>
-            <p class="example-sentences">Men çaý içýärin.</p>
+            <button class="toggle-btn" aria-label="Toggle more information">More Info</button>
+            <div class="extra-info" style="display: none;">
+                <p class="pinyin">chá</p>
+                <button onclick="playAudio('茶')" aria-label="Play pronunciation">🔊</button>
+                <p class="translation">çaý</p>
+                <p class="word-type">Noun</p>
+                <p class="example-sentences">我喝茶。</p>
+                <p class="example-sentences">Men çaý içýärin.</p>
+                <div class="hanzi-card">
+                    <div id="character-target34"></div>
+                    <button onclick="playAnimation34()">▶ Animate</button>
+                    <button onclick="startQuiz34()">✍ Practice</button>
+                </div>
+            </div>
         </div>
         <div></div>
-        <div class="hanzi-card">
-            <div id="character-target34"></div>
-            <button onclick="playAnimation34()">▶ Animate</button>
-            <button onclick="startQuiz34()">✍ Practice</button>
-        </div>
+    </div>
     </div>
 
     <footer class="footer">
@@ -466,6 +528,24 @@
         window[`playAnimation${id}`] = () => writers[id].animateCharacter();
         window[`startQuiz${id}`] = () => writers[id].quiz();
       });
+
+      const buttons = document.querySelectorAll('.toggle-btn');
+      const infoDivs = document.querySelectorAll('.extra-info');
+      buttons.forEach((button, index) => {
+          button.onclick = function() {
+              const info = infoDivs[index];
+              info.style.display = info.style.display === "none" ? "block" : "none";
+          }
+      });
+
+      function playAudio(text) {
+        if ('speechSynthesis' in window) {
+          if (speechSynthesis.speaking) speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'zh-CN';
+          speechSynthesis.speak(utterance);
+        }
+      }
     </script>
 </body>
 </html>
