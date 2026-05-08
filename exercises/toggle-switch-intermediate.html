@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button class="toggle-btn">more info</button>
+    <p style="display: none;" class="info">it is me</p>
+
+    <h1>Hello</h1>
+    <button class="toggle-btn">more info</button>
+    <p style="display: none;" class="info">it is me</p>
+
+    <h1>Hello</h1>
+    <button class="toggle-btn">more info</button>
+    <p style="display: none;" class="info">it is me</p>
+
+
+    <script>
+        const buttons = document.querySelectorAll('.toggle-btn');
+        const text = document.querySelectorAll('.info');
+
+        buttons.forEach((button, index) => {
+            button.onclick = function () {
+                if (text[index].style.display === "none") {
+                    text[index].style.display = "block";
+                } else {
+                    text[index].style.display = "none";
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

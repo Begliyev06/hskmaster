@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle switch</title>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+    </div>
+
+    <button id="toggle-btn">more info</button>
+
+    <p id="info" style="display:none;">fuck you</p>
+
+    <script>
+        const button = document.getElementById("toggle-btn");
+        const text = document.getElementById("info");
+
+        button.onclick = function () {
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

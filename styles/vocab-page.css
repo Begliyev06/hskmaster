@@ -1,8 +1,25 @@
-.character-container{
+.vocab-page-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 25px;
-    margin-bottom: 57px;
+    column-gap: 16px;
+    row-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+            .vocab-page-grid{
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding-top: 20px;
+            }
+        }
+
+
+.character-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 25px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 40px;
@@ -25,17 +42,20 @@
 
 h1{
     font-weight: 800;
-    color: #7672cb;
+    color: #1e3a8a;
     font-size: 40px;
-    text-align: center;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
 }
 
 .hanzi{
-    font-size: 90px;
+    font-size: 80px;
+    font-family: 'Noto Sans SC', sans-serif;
     font-weight: bold;
     margin-right: 8px;
     margin-bottom: 20px;
-    color: #7672cb;
+    color: #1e3a8a;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +64,16 @@ h1{
     }
     h1 {
         font-size: 28px;
+        margin-left: 30px;
     }
+}
+
+.toggle-btn{
+    justify-content: center;
+    align-items: center;
+}
+.extra-info{
+    display: none;
 }
 
 
