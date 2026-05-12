@@ -27,9 +27,7 @@
 
       <div class="extra-info" style="display: none;">
         <p class="pinyin">nǐ hǎo</p>
-        <button onclick="playAudio('你好')" aria-label="Play pronunciation for ni hao">
-  🔊
-</button>
+        <button onclick="playAudio('/hsk/cmn-你好.mp3')">你好</button>
         <p class="translation">Salam</p>
         <p class="word-type">Phrase</p>
         <p class="example-sentences">老师，你好!</p>
@@ -56,7 +54,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">dàjiā</p>
-        <button onclick="playAudio('大家')" aria-label="Play pronunciation for da jia">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-大家.mp3')">大家</button>
         <p class="translation">Hemmäňiz</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">大家好！</p>
@@ -81,7 +79,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">hǎo</p>
-        <button onclick="playAudio('好')" aria-label="Play pronunciation for hao">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-好.mp3')">好</button>
         <p class="translation">Gowy</p>
         <p class="word-type">Sypat</p>
         <p class="example-sentences">我很好。</p>
@@ -101,7 +99,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">xuéshēng</p>
-        <button onclick="playAudio('学生')" aria-label="Play pronunciation for xue sheng">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-学生.mp3')">学生</button>
         <p class="translation">Talyp, okuwcy</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">我是学生。</p>
@@ -126,7 +124,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">lǎoshī</p>
-        <button onclick="playAudio('老师')" aria-label="Play pronunciation for lao shi">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-老师.mp3')">老师</button>
         <p class="translation">Mugallym</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">老师好！</p>
@@ -151,7 +149,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">nín</p>
-        <button onclick="playAudio('您')" aria-label="Play pronunciation for nin">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-您.mp3')">您</button>
         <p class="translation">Siz</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">您是老师吗？</p>
@@ -171,7 +169,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">nǐmen</p>
-        <button onclick="playAudio('你们')" aria-label="Play pronunciation for ni men">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-你们.mp3')">你们</button>
         <p class="translation">Siz</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">你们好！</p>
@@ -196,7 +194,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">xièxie</p>
-        <button onclick="playAudio('谢谢')" aria-label="Play pronunciation for xie xie">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-谢谢.mp3')">谢谢</button>
         <p class="translation">sag bol / sag boluň</p>
         <p class="word-type">işlik</p>
         <p class="example-sentences">谢谢你！</p>
@@ -221,7 +219,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">bú kèqi</p>
-        <button onclick="playAudio('不客气')" aria-label="Play pronunciation for bu ke qi">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-不客气.mp3')">不客气</button>
         <p class="translation">hiç zat däl / bolýar</p>
         <p class="word-type">Phrase</p>
         <p class="example-sentences">谢谢！不客气。</p>
@@ -246,7 +244,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">tóngxué</p>
-        <button onclick="playAudio('同学')" aria-label="Play pronunciation for tong xue">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-同学.mp3')">同学</button>
         <p class="translation">synpdaş</p>
         <p class="word-type">Noun</p>
         <p class="example-sentences">他是我同学</p>
@@ -271,7 +269,7 @@
       <button class="toggle-btn">More Info</button>
       <div class="extra-info" style="display: none;">
         <p class="pinyin">zàijiàn</p>
-        <button onclick="playAudio('再见')" aria-label="Play pronunciation for zai jian">🔊</button>
+        <button onclick="playAudio('/hsk/cmn-再见.mp3')">再见</button>
         <p class="translation">hoş gal</p>
         <p class="word-type">Phrase</p>
         <p class="example-sentences">再见！</p>
@@ -344,9 +342,9 @@
     </script>
 
     <script>
-function playAudio(text) {
-  const utterance = new SpeechSynthesisUtterance(text);
-  speechSynthesis.speak(utterance);
+    function playAudio(url) {
+  const audio = new Audio(url);
+  audio.play();
 }
 </script>
 </body>

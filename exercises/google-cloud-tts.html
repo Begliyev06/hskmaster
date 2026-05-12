@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="playAudio('学习中文很有意思')">
+  Play Audio
+</button>
+
+<script>
+    async function playAudio(text) {
+
+  const response = await fetch("http://localhost:3000/speak", {
+    method: "POST",
+
+    headers: {
+      "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify({
+      text: text
+    })
+  });
+
+  const audioData = await response.arrayBuffer();
+
+  const blob = new Blob([audioData], {
+    type: "audio/mp3"
+  });
+
+  const audioUrl = URL.createObjectURL(blob);
+
+  const audio = new Audio(audioUrl);
+
+  audio.play();
+}
+</script>
+</body>
+</html>
