@@ -1,8 +1,40 @@
-header{
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background-color: rgb(0, 0, 165);
+.intro-text-div{
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
 }
+.intro-text{
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 104px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+.intro-text-small{
+    color: black;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 16px;
+    letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+            .intro-text { font-size: 45px;
+                text-align:center;
+            line-height: 50px;
+            letter-spacing: 0.5px;
+        }
+        .intro-text-small { font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.25px;
+        }
+    }
+
 
 .courses{
     text-align: center;

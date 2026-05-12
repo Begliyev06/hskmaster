@@ -27,6 +27,7 @@ body{
     }
 }
 
+
  .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -80,7 +81,8 @@ body{
         }
         .home-table-content {
             font-size: 3rem;
-            font-weight: 800;
+            font-weight: bold;
+            text-decoration: underline;
             letter-spacing: -0.025em;
             color: var(--text-dark);
         }
@@ -95,9 +97,3 @@ p{
     color: var(--text-dark);
 }
 
-h1{
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
