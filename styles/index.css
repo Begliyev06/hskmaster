@@ -1,3 +1,12 @@
+.hero-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+    .hero-page {
+        grid-template-columns: 1fr;
+    }
+}
 .intro-text-div{
     justify-content: center;
     align-items: center;
@@ -6,11 +15,14 @@
 .intro-text{
     color: black;
     text-align: center;
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    line-height: 104px;
+    line-height: 1.1;
     margin-bottom: 0;
     letter-spacing: 1px;
+}
+.intro-text span{
+    color: var(--primary-color);
 }
 .intro-text-small{
     color: black;
@@ -24,48 +36,44 @@
 @media (max-width: 768px) {
             .intro-text { font-size: 2.25rem;
             text-align:center;
-            line-height: 50px;
+            line-height: 1.2;
             letter-spacing: 0.5px;
         }
         .intro-text-small { font-size: 15px;
             line-height: 28px;
             letter-spacing: 0.25px;
+            padding: 0 20px 0 20px;
         }
     }
-
+.hero-image{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 40px auto 0 auto;
+}
 
 .courses{
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(0, 0, 165);
+    color: var(--primary-color);
 
 }
     .course-buttons{
-        background-color: rgb(0, 0, 165);
+        background-color: var(--primary-color);
         color: white;
-        border: none;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-        padding-top: 40px;
-        margin-right: 40px;
-        border-radius: 18px;
-        font-weight: bold;
+        border: 2px solid var(--primary-dark);
+        border-bottom: 5px solid var(--primary-dark);
+        padding: 16px 32px;
+        border-radius: 14px;
+        font-weight: 700;
         font-size: 15px;
         cursor: pointer;
-        margin-left: 8px;
-        transition: background-color 0.8s, color 0.8s, border-color 0.8s;
+        text-transform: uppercase;
+        transition: all 0.1s;
     }
-    .course-buttons:hover{
-        background-color: white;
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(0, 0, 165);
-        padding-left: 39px;
-        padding-right: 39px;
-        padding-bottom: 39px;
-        padding-top: 39px;
-        color: rgb(0, 0, 165);
-
+    .course-buttons:active {
+        transform: translateY(4px);
+        border-bottom-width: 1px;
     }
