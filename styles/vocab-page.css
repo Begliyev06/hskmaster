@@ -12,6 +12,7 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+        
         }
 
 
@@ -31,10 +32,8 @@
     transform: translateY(-4px);
 }
 
-.character-container:active {
-    transform: translateY(4px);
-    border-bottom-width: 2px;
-}
+
+
 
 h1{
     font-weight: 700;
@@ -153,6 +152,6 @@ button {
 }
 
 button:active {
-    border-bottom-width: 0px;
-    transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom-width: 2px;
 }
