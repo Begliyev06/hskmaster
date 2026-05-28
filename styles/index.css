@@ -1,19 +1,22 @@
 .hero-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 @media (max-width: 768px) {
     .hero-page {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 .intro-text-div{
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .intro-text{
-    color: black;
+    color: var(--text-dark);
     text-align: center;
     font-size: 3.5rem;
     font-weight: 700;
@@ -50,7 +53,7 @@
     max-width: 600px;
     height: auto;
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 0px auto 0 auto;
 }
 
 .courses{
