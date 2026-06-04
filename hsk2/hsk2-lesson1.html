@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSK 2 - Lesson 1</title>
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/vocab-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="right-section"><a href="../index.html"><img src="/images/logo.png" alt="Logo"></a></div>
+        <div class="left-section">
+            <nav class="nav">
+                <ul class="nav-list">                    
+                    <li><a href="about-us.html">Hakynda</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button class="get-started-button">Blog</button>
+                    <button class="get-started-button">Instagram</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>HSK2 Lesson 1 Vocabulary</h1>
+    <div class="vocab-page-grid">
+        <div class="character-container">
+            <div class="word-container">
+                <h2 class="hanzi">就</h2>
+                <button class="toggle-btn">More Info</button>
+                <div class="extra-info" style="display: none;">
+                    <p class="pinyin">jiù</p>
+                    <p class="translation">diňe, şol wagt, eýýäm</p>
+                    <p class="word-type">Adverb</p>
+                    <p class="example-sentences">我就要去学校了。(Men häzir mekdebe gitjek.)</p>
+                    
+                    <div class="hanzi-card">
+                        <div id="character-target1"></div>
+                        <button onclick="playAnimation1()">▶ Animate</button>
+                        <button onclick="startQuiz1()">✍ Practice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.5/dist/hanzi-writer.min.js"></script>
+<script>
+      function createWriter(id, character) {
+        const writer = HanziWriter.create(id, character, {
+          width: 200,
+          height: 200,
+          padding: 10,
+          showOutline: true,
+          strokeAnimationSpeed: 1,
+          delayBetweenStrokes: 100
+        });
+        return writer;
+      }
+
+      const charMap = {
+        1:'就', 2:'给', 3:'让', 4:'接'
+      };
+
+      const writers = {};
+      for (const id in charMap) {
+        if (charMap.hasOwnProperty(id)) {
+          writers[id] = createWriter(`character-target${id}`, charMap[id]);
+          window[`playAnimation${id}`] = () => writers[id].animateCharacter();
+          window[`startQuiz${id}`] = () => writers[id].quiz();
+        }
+      }
+
+      const buttons = document.querySelectorAll('.toggle-btn');
+      const infoDivs = document.querySelectorAll('.extra-info');
+      buttons.forEach((button, index) => {
+          button.onclick = function() {
+              const info = infoDivs[index];
+              info.style.display = info.style.display === "none" ? "block" : "none";
+          }
+      });
+
+      function playAudio(src) {
+        const audio = new Audio(src);
+        audio.play();
+      }
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2026 HSK Master. All rights reserved.</p>
+    </footer>
+</body>
+</html>
